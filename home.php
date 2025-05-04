@@ -17,7 +17,7 @@ include 'connection.php';
         <h1>Ovarian Response Analyzer</h1>
         <nav>
            <ul>
-                <li><a href="home.php">Home</a></li>
+                
                 <li><a href="add_info.php">Enter Your Information</a></li>
                 <li><a href="learn.php">Learn More</a></li>
                 <li><a href="features.php">Track Your Health</a></li>
