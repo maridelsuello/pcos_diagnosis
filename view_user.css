@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #800080, #ff0000);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+th {
+    background: #99004d;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+tr:hover {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+
+table,
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+table {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+#edit-modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-top: 10px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#save-edit,
+#close-modal {
+    margin-top: 15px;
+    padding: 8px;
+    cursor: pointer;
+}

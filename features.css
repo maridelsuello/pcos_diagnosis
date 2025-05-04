@@ -1,0 +1,144 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #800080, #ff0000);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure the body takes up the full height of the screen */
+    overflow-y: auto;
+    /* Allows for scrolling if content exceeds screen size */
+}
+
+/* Full-Screen Layout */
+#full-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100vh;
+    /* Take up the entire screen height */
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    height: 80vh;
+    /* Make the table take up 80% of the screen height */
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    /* Space between the header and the table */
+    display: block;
+    
+    /* Enable scrolling within the table if it overflows */
+}
+
+/* Table Header and Cells */
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    letter-spacing: 1.47px;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Optional shadow for clean effect */
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.edit-btn,
+.delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #00c853;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #009624;
+}
+
+.delete-btn {
+    background-color: #d50000;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #9b0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 20px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
